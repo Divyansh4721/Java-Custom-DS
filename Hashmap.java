@@ -25,7 +25,7 @@ public class Hashmap<K, V> {
     }
 
     private int getBucketIndex(K key) {
-        int hashCode = key.hashCode();
+        int hashCode = Math.abs(key.hashCode());
         return hashCode % numBuckets;
     }
 
