@@ -4,7 +4,7 @@ import java.util.*;
 class c {
 
     public static void main(String[] args) {
-        int n = 30;
+        int n = 31;
         int arr[][] = new int[n][n];
         int centx = n / 4;
         int centy = n / 4 + 1;
@@ -27,10 +27,10 @@ class c {
             }
         }
 
-        for (int i = n / 2, j = n - 7; i >= 2; i--, j--) {
+        for (int i = n / 2, j = n - 8; i >= 2; i--, j--) {
             arr[j][i] = 1;
         }
-        for (int i = n / 2, j = n - 7; i < n - 2; i++, j--) {
+        for (int i = n / 2, j = n - 8; i < n - 2; i++, j--) {
             arr[j][i] = 1;
         }
 
